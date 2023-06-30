@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "facebank-ra",
+    "slug": "facebank-ra",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#212122"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.abolsoft.facebank",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.abolsoft.facebank",
+      "versionCode": "1.0.0"
+    },
+    "androidNavigationBar": {
+      "visible": true,
+      "barStyle": "dark-content"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Разрешить $(PRODUCT_NAME) доступ к вашей камере."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Разрешить $(PRODUCT_NAME) доступ к вашей галерее.",
+          "savePhotosPermission": "Разрешить $(PRODUCT_NAME) сохранять в вашу галерею.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f19bb6bd-75ae-4b70-b38e-625b0f50e7a0"
+      }
+    }
+  }
+}
