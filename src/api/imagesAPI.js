@@ -10,11 +10,11 @@ export const imagesAPI = {
       name: 'photo.jpg'
     });
 
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(response);
-      }, 1000);
-    });
+    // return new Promise((resolve, reject) => {
+    //   setTimeout(() => {
+    //     resolve(response);
+    //   }, 1000);
+    // });
 
     return instance.post(`search`, formData)
       .then(response => {
